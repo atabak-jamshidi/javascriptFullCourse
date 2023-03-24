@@ -51,12 +51,12 @@
 // -------------------------------------------
 //Main chalange 1 💠 
 
-count = 0
-countEl = document.getElementById("count-el")
-function increment(){
-  count++
-  countEl.innerText = count;
-}
+// count = 0
+// countEl = document.getElementById("count-el")
+// function increment(){
+//   count++
+//   countEl.innerText = count;
+// }
   // function save(){
   //   console.log(count)
   // }
@@ -74,12 +74,74 @@ function increment(){
 // let myGreetings =  greetings + myName
 // console.log(myGreetings)
 
-let welcomeEl = document.getElementById("welcome-el");
+// let welcomeEl = document.getElementById("welcome-el");
 // welcomeEl.innerText = myGreetings
 
-function save(){
-    let sperator = count + " - "
-    welcomeEl.textContent += sperator
-    countEl.innerText = 0
-    count = 0
-  }
+// function save(){
+//     let sperator = count + " - "
+//     welcomeEl.textContent += sperator
+//     countEl.innerText = 0
+//     count = 0
+//   }
+// -------------------------------------
+// section 1 finished ------------------
+// -------------------------------------
+
+// chalanege 2-1
+// let firstName = "atabal",lastName = "jamshidi"
+// let fullName = firstName + " " +lastName 
+// console.log(fullName)
+
+// let hi = "Linda"
+// let greeting = "Hi there"
+
+// function greet(){
+//   console.log(hi + " " + greeting)
+// }
+
+// greet()
+
+// chalange 2-2
+
+// let myPoint = 3
+// let myPointEl = document.getElementById("myPoint-el")
+
+// function add3Points(){
+//   myPoint += 3
+//   myPointEl.textContent = myPoint
+// }
+
+// function remove1Point(){
+//   myPoint -= 1
+//   myPointEl.textContent = myPoint
+// }
+
+// chalange 2-3
+
+
+// let error = "Something went wrong, please try again"
+// let purchaseEl = document.getElementById("pourchase-el")
+// function pourchase(){
+//   purchaseEl.textContent = error
+// }
+
+// chalange 2-4
+  let num1 = 8
+  let num2 = 2
+
+  document.getElementById("num1-el").textContent = num1
+  document.getElementById("num2-el").textContent = num2
+let output = document.getElementById("output-el")
+function Add(){
+  output.textContent = num1 + num2
+}
+function Subtract(){
+  output.textContent = num1 - num2
+}
+function Devide(){
+  output.textContent = num1 / num2
+}
+function Multiply(){
+  output.textContent = num1 * num2
+}
+
