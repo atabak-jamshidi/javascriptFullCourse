@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="./dist/output.css">
 </head>
-<body class="bg-blue-600 flex justify-center flex-col items-center h-screen">
+<body class="bg-green-300 flex justify-center flex-col items-center h-screen">
   
   <!-- *************** people counter ****************** 1)--> 
     <!-- <div class="flex flex-col bg-red-200 p-10 rounded-lg items-center ">
@@ -23,14 +23,14 @@
     <!-- section 1 finished ------------------ -->
     <!-- ------------------------------------- -->
 
-    <div>
+    <!-- <div> -->
       <!-- <p class="inline-block"> my Point :</p>
       <h1 id="myPoint-el" class="inline"></h1>
       <button id="" class="block" onclick="add3Points()">Add</button>
       <button id="" class="block" onclick="remove1Point()">Remove</button> -->
       
       <!-- <button id="pourchase-el" onclick="pourchase()">Pourchase</button> -->
-      
+<!--       
         <h1 id="num1-el" class="inline-block m-4"></h1>
         <h1 id="num2-el" class="inline-block"></h1>
         <br>
@@ -41,8 +41,28 @@
         <button onclick="Multiply()">Multiply</button>
 
         <h1 id="output-el"></h1>
-    </div>
+    </div> -->
 
+    <!-- ------------------------------------- -->
+    <!-- section 1 finished ------------------ -->
+    <!-- ------------------------------------- -->
+
+    <div class="bg-green-900 p-5 rounded-lg text-orange-400">
+      <div class="m-4 flex justify-center">
+        <h1>Blackjack</h1>
+      </div>
+      <div class="flex items-center flex-col gap-2 m-2">
+        <p id="message-el">Want to play a round?</p>
+        <p id="cards-el">Cards:</p>
+        <p id="sum-el">Sum:</p>
+        
+        <!-- this p is for chalange 3-3 -->
+        <!-- <p id="greeting-el"></p> -->
+      </div>
+      <button onclick="startGame()" class="rounded-lg border-4 border-green-500 p-1 my-4 bg-yellow-400 text-rose-900 w-full">Start Game</button>
+      <button onclick="newCard()" class="rounded-lg border-4 border-green-500 p-1  bg-yellow-400 text-rose-900 w-full">New Card</button>
+      <p id="player-el" class="my-2"></p>
+    </div>
   <script src="./script.js"></script>
 </body>
 </html>
