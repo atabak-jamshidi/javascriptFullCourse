@@ -239,8 +239,86 @@
 
 
 // -------------------------------
+// chalange 4-1
+  let person = {
+    name: "atabak",
+    age: 24,
+    country: "iran",
+    logData: function(){
+      let data = person.name + " is " + person.age + " years old and live in " + person.country
+      console.log(data);
+    }
+  }
+  person.logData()
+
+  let age = 26
+
+  if (age < 6 ) {
+    console.log("free");
+  }else if (age >= 6 && age <= 17) {
+    console.log("child discount");
+  }else if (age >= 18 && age <= 26) {
+    console.log("student discount");
+  }else if (age >= 26 && age <= 66) {
+    console.log("full price");
+  }else if (age > 66) {
+    console.log("senior citizen discount");
+  }
 
 
+  // let largeCountries = ["China", "India", "USA", "Indonesia", "Pakistan"]
+
+  // for (let i = 0; i < largeCountries.length; i++) {
+  //   console.log(largeCountries[i]);
+    
+  // }
+  let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"]
+
+  largeCountries.pop()
+  largeCountries.push("Pakistan")
+  // console.log(largeCountries);
+  largeCountries.shift()
+  // console.log(largeCountries);
+  largeCountries.unshift("China")
+  console.log(largeCountries);
+
+  let dayOfMonth = 13
+  let weekday = "Friday"
+
+  if (dayOfMonth === 13 && weekday === "Friday") {
+    console.log("💬" );
+  }
+
+  let hands = ["rock", "paper", "scissor"]
+
+  function randomItem(){
+    // console.log(hands.length);
+    let random = Math.floor(Math.random() * hands.length)
+    console.log(hands[random]);
+    return hands[random] 
+  }
+  randomItem()
+
+  let fruit = ["apple", "orange", "apple", "apple" ,"orange"]
+  let appleShelf = document.getElementById("appleShelf-el")
+  let orangeShelf = document.getElementById("orangeShelf-el")
+
+  function put() {
+    for (let i = 0; i < fruit.length; i++) {
+
+    if (fruit[i] === "apple") {
+      appleShelf.textContent += fruit[i] +" "
+    }else {
+      orangeShelf.textContent += fruit[i] + " "
+    }
+    
+    }
+  }
+  put()
+  
+
+
+// -------------------------------
 
 let firstCard = getRandomCard()
 let secondCard = getRandomCard()
